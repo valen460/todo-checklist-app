@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Musculation - Tous les Groupes Musculaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💪 Checklist Musculation</h1>
+            <p>Suivi complet de vos exercices</p>
+        </header>
+
+        <div class="categories-selector">
+            <button class="category-btn active" data-category="dos">Dos</button>
+            <button class="category-btn" data-category="biceps">Biceps</button>
+            <button class="category-btn" data-category="abdos">Abdos</button>
+            <button class="category-btn" data-category="poitrine">Poitrine</button>
+            <button class="category-btn" data-category="epaules">Épaules</button>
+            <button class="category-btn" data-category="jambes">Jambes</button>
+            <button class="category-btn" data-category="cardio">Cardio</button>
+        </div>
+
+        <div class="content-area">
+            <!-- DOS -->
+            <div class="category-content active" data-category="dos">
+                <h2>🔙 Exercices du Dos</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseDos" placeholder="Ajouter un exercice du dos..." />
+                    <button class="add-btn" data-category="dos">+</button>
+                </div>
+                <ul class="checklist" id="checklistDos">
+                    <li><input type="checkbox" /> Tractions à la barre</li>
+                    <li><input type="checkbox" /> Rowing barre</li>
+                    <li><input type="checkbox" /> Tirage vertical</li>
+                    <li><input type="checkbox" /> Tirage horizontal</li>
+                </ul>
+            </div>
+
+            <!-- BICEPS -->
+            <div class="category-content" data-category="biceps">
+                <h2>💪 Exercices des Biceps</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseBiceps" placeholder="Ajouter un exercice des biceps..." />
+                    <button class="add-btn" data-category="biceps">+</button>
+                </div>
+                <ul class="checklist" id="checklistBiceps">
+                    <li><input type="checkbox" /> Curl haltères</li>
+                    <li><input type="checkbox" /> Curl barre</li>
+                    <li><input type="checkbox" /> Curl pupitre</li>
+                    <li><input type="checkbox" /> Curl machine</li>
+                </ul>
+            </div>
+
+            <!-- ABDOS -->
+            <div class="category-content" data-category="abdos">
+                <h2>🔥 Exercices des Abdos</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseAbdos" placeholder="Ajouter un exercice des abdos..." />
+                    <button class="add-btn" data-category="abdos">+</button>
+                </div>
+                <ul class="checklist" id="checklistAbdos">
+                    <li><input type="checkbox" /> Abdominaux crunch</li>
+                    <li><input type="checkbox" /> Relevé de jambes</li>
+                    <li><input type="checkbox" /> Planche abdominale</li>
+                    <li><input type="checkbox" /> Sit-ups</li>
+                </ul>
+            </div>
+
+            <!-- POITRINE -->
+            <div class="category-content" data-category="poitrine">
+                <h2>🏋️ Exercices de la Poitrine</h2>
+                <div class="input-group">
+                    <input type="text" id="newExercisePoitrine" placeholder="Ajouter un exercice de la poitrine..." />
+                    <button class="add-btn" data-category="poitrine">+</button>
+                </div>
+                <ul class="checklist" id="checklistPoitrine">
+                    <li><input type="checkbox" /> Développé couché</li>
+                    <li><input type="checkbox" /> Développé incliné</li>
+                    <li><input type="checkbox" /> Écartés haltères</li>
+                    <li><input type="checkbox" /> Pompes</li>
+                </ul>
+            </div>
+
+            <!-- ÉPAULES -->
+            <div class="category-content" data-category="epaules">
+                <h2>⭐ Exercices des Épaules</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseEpaules" placeholder="Ajouter un exercice des épaules..." />
+                    <button class="add-btn" data-category="epaules">+</button>
+                </div>
+                <ul class="checklist" id="checklistEpaules">
+                    <li><input type="checkbox" /> Développé militaire</li>
+                    <li><input type="checkbox" /> Élévations latérales</li>
+                    <li><input type="checkbox" /> Élévations frontales</li>
+                    <li><input type="checkbox" /> Shrugs</li>
+                </ul>
+            </div>
+
+            <!-- JAMBES -->
+            <div class="category-content" data-category="jambes">
+                <h2>🦵 Exercices des Jambes</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseJambes" placeholder="Ajouter un exercice des jambes..." />
+                    <button class="add-btn" data-category="jambes">+</button>
+                </div>
+                <ul class="checklist" id="checklistJambes">
+                    <li><input type="checkbox" /> Squats</li>
+                    <li><input type="checkbox" /> Presse à jambes</li>
+                    <li><input type="checkbox" /> Fentes</li>
+                    <li><input type="checkbox" /> Leg curl</li>
+                </ul>
+            </div>
+
+            <!-- CARDIO -->
+            <div class="category-content" data-category="cardio">
+                <h2>🏃 Exercices Cardio</h2>
+                <div class="input-group">
+                    <input type="text" id="newExerciseCardio" placeholder="Ajouter un exercice cardio..." />
+                    <button class="add-btn" data-category="cardio">+</button>
+                </div>
+                <ul class="checklist" id="checklistCardio">
+                    <li><input type="checkbox" /> Course à pied</li>
+                    <li><input type="checkbox" /> Vélo elliptique</li>
+                    <li><input type="checkbox" /> Rameur</li>
+                    <li><input type="checkbox" /> Corde à sauter</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Progression</h3>
+                <p id="progress">0%</p>
+            </div>
+            <div class="stat-box">
+                <h3>Terminés</h3>
+                <p id="completed">0/0</p>
+            </div>
+        </div>
+
+        <button class="reset-btn" id="resetBtn">Réinitialiser le jour</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
